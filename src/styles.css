@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --red:  #a92c2c;
+    --teal: #52c0b0;
+    font-family: "Yrsa", serif;
+    font-size: 1.2rem;
+}
+
+.container{
+    height: 100vh;
+    background-image: url("./background-sandwich.png");
+    
+}
+header{
+    display: grid;
+    grid-template-columns: 60vw 40vw;
+    background-color: var(--red);
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    grid-column: 2/3;
+    
+    
+}
+.nav button{
+    border: none;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+}
+.content{
+    display: grid;
+    grid-template-columns: auto  40vw;
+    /* grid-template-rows: 3rem 30vh 20vh 60vh; */
+    grid-template-rows: 3rem auto auto auto;
+    margin: 10px 20vw 10px 20vw;
+    gap: 10px;
+}
+.content div{
+    background-color: #e5ece2;
+    
+
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    grid-row: 1/3;
+    /* width: auto; */
+    /* justify-content: space-between; */
+    align-items: center;
+    /* height: auto; */
+    
+}
+.links a{
+    padding: 20px;
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px solid grey;
+    margin: 20px;
+}
+#logo{
+    color: white;
+    font-size: 3rem;
+    background-color: var(--red);
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+    grid-column: 1 / 3;
+    font-family: "Imperial Script", cursive;
+    
+}
+.pictures{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    padding: 1rem;
+}
+
+    
+
+.content .headline{
+    max-height: 3rem;
+    display: flex;
+    font-size: 1.5rem;
+    height: 2rem;
+    color: white;
+    background-color: var(--red);
+    grid-column: 2 / 3;
+    grid-row: 1 /2 ;
+    
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+#sandwich-pic{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+.social{
+    grid-column: 2 / 3;
+    grid-row: 3 / 5;
+    display: flex;
+    justify-content: space-around;
+    height: 30rem;
+}
+.social-box{
+    border: 2px solid var(--teal);
+    margin: 1.5rem;
+    width: 40%;
+    box-shadow: 
+    0 0 0 3px white,  
+    0 0 0 7px var(--teal) ;
+
+
+}
+.content .menu{
+    padding: 10px;
+    height: auto;
+    grid-column: 2 / 3;
+    color: black;
+    border: 2px solid var(--teal);
+    /* margin: 1.5rem; */
+    grid-row: 1/-1;
+    box-shadow: 
+    0 0 0 3px white,  
+    0 0 0 7px var(--teal) ;
+    white-space: pre;
+}
